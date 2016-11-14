@@ -19,6 +19,10 @@
                         {
                             "xml": "<feature name=\"SecureStorage\"><param name=\"android-package\" value=\"com.crypho.plugins.SecureStorage\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"RootDetection\"><param name=\"android-package\" value=\"ru.trykov.root.RootDetection\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -43,6 +47,12 @@
             "PACKAGE_NAME": "com.example.hello"
         },
         "cordova-plugin-secure-storage": {
+            "PACKAGE_NAME": "com.example.hello"
+        },
+        "cordova-plugin-root-detection": {
+            "PACKAGE_NAME": "com.example.hello"
+        },
+        "cordova-plugin-jailbreak-detection": {
             "PACKAGE_NAME": "com.example.hello"
         }
     },
@@ -69,11 +79,29 @@
             "file": "plugins/cordova-plugin-secure-storage/www/sjcl_ss.js",
             "pluginId": "cordova-plugin-secure-storage",
             "runs": true
+        },
+        {
+            "id": "cordova-plugin-root-detection.RootDetection",
+            "file": "plugins/cordova-plugin-root-detection/www/rootdetection.js",
+            "pluginId": "cordova-plugin-root-detection",
+            "clobbers": [
+                "rootdetection"
+            ]
+        },
+        {
+            "id": "cordova-plugin-jailbreak-detection.JailbreakDetection",
+            "file": "plugins/cordova-plugin-jailbreak-detection/www/jailbreakdetection.js",
+            "pluginId": "cordova-plugin-jailbreak-detection",
+            "clobbers": [
+                "jailbreakdetection"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.3.0",
         "cordova-plugin-android-fingerprint-auth": "0.3.1",
-        "cordova-plugin-secure-storage": "2.6.1"
+        "cordova-plugin-secure-storage": "2.6.1",
+        "cordova-plugin-root-detection": "0.1.1",
+        "cordova-plugin-jailbreak-detection": "0.1.0"
     }
 }

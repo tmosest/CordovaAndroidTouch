@@ -21,6 +21,22 @@ module.exports = [
         "file": "plugins/cordova-plugin-secure-storage/www/sjcl_ss.js",
         "pluginId": "cordova-plugin-secure-storage",
         "runs": true
+    },
+    {
+        "id": "cordova-plugin-root-detection.RootDetection",
+        "file": "plugins/cordova-plugin-root-detection/www/rootdetection.js",
+        "pluginId": "cordova-plugin-root-detection",
+        "clobbers": [
+            "rootdetection"
+        ]
+    },
+    {
+        "id": "cordova-plugin-jailbreak-detection.JailbreakDetection",
+        "file": "plugins/cordova-plugin-jailbreak-detection/www/jailbreakdetection.js",
+        "pluginId": "cordova-plugin-jailbreak-detection",
+        "clobbers": [
+            "jailbreakdetection"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -28,7 +44,9 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.3.0",
     "cordova-plugin-android-fingerprint-auth": "0.3.1",
-    "cordova-plugin-secure-storage": "2.6.1"
+    "cordova-plugin-secure-storage": "2.6.1",
+    "cordova-plugin-root-detection": "0.1.1",
+    "cordova-plugin-jailbreak-detection": "0.1.0"
 };
 // BOTTOM OF METADATA
 });

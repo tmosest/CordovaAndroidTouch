@@ -22,5 +22,21 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-root-detection": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-root-detection"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-jailbreak-detection": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-jailbreak-detection"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

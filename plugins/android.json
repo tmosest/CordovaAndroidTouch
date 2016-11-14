@@ -15,6 +15,12 @@
         },
         "cordova-plugin-secure-storage": {
             "PACKAGE_NAME": "com.example.hello"
+        },
+        "cordova-plugin-root-detection": {
+            "PACKAGE_NAME": "com.example.hello"
+        },
+        "cordova-plugin-jailbreak-detection": {
+            "PACKAGE_NAME": "com.example.hello"
         }
     },
     "dependent_plugins": {}
