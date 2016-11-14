@@ -1,4 +1,5 @@
 function FingerprintAuth() {
+  
 }
 
 FingerprintAuth.prototype.show = function (params, successCallback, errorCallback) {

@@ -12,6 +12,9 @@
         },
         "cordova-plugin-android-fingerprint-auth": {
             "PACKAGE_NAME": "com.example.hello"
+        },
+        "cordova-plugin-secure-storage": {
+            "PACKAGE_NAME": "com.example.hello"
         }
     },
     "dependent_plugins": {}

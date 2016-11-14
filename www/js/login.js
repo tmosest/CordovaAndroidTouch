@@ -1,13 +1,43 @@
 /*
   Test file to test for login stuff.
 */
+/*
+var ss = new SecureStorage(
+    function () { console.log('Success')},
+    function (error) { console.log('Error ' + error); },
+    'hello_app');
+*/
+
+//Test to see if the user already has keys
+/*
+ss.keys(
+    function (keys) { console.log('Got keys ' + keys.join(', ')); },
+    function (error) { console.log('Error, ' + error); }
+);
+*/
+
+//cordova.exec(success, fail, 'SecureStorage', nativeMethodName, args);
+
+//'get'
+
+/*cordova.exec(
+  function (value) { console.log('Success, got ' + value); },
+  function (error) { console.log('Error ' + error); },
+  'SecureStorage',
+  'get', ['hello_app', 'fa']);
+*/
+
 var submit = document.getElementById("submit");
 
 submit.onclick = function() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
   //alert("username: " + username + " password: " + password);
-  FingerprintAuth.isAvailable(isAvailableSuccess, isAvailableError);
+  if(username == "test" && password == "test") {
+    FingerprintAuth.isAvailable(isAvailableSuccess, isAvailableError);
+  } else {
+    alert("Incorrect username and password.");
+  }
 };
 
 var logout = document.getElementById("logout");
